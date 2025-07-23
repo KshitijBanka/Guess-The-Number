@@ -61,11 +61,13 @@ def play():
         h = open("score_history.txt", "r")
         history_to_check = h.read()
         h.close()
-        print(f"\n{history_to_check}")
+        time.sleep(1)
+        print(f"\n{history_to_check}\n")
 
     print("Play again? 1 for yes 2 for no: ")
     print("(High score and score history clears if you enter 2)")
     playagain = input("")
+    print("\n")
     if playagain=="1":
         play()
     if playagain=="2":
